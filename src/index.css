@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  body {
+    font-family: "Lexend", sans-serif;
+  }
+}
+
+.title__color {
+  color: #150B2B;
+}
 
