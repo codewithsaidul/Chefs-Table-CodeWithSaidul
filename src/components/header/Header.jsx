@@ -2,7 +2,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="w-full lg:w-[90%] max-w-[1320px] mx-auto">
+    <div>
       <div className="navbar bg-base-100">
         
         <div className="navbar-start">

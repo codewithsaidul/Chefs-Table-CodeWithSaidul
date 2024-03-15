@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'regal-blue': '#150B2B',
+        'title-color': '#150B2B',
         'primary-color': '#0BE58A',
       },
 },

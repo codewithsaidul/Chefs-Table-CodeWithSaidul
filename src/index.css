@@ -9,17 +9,16 @@
   body {
     font-family: "Lexend", sans-serif;
   }
+  img {
+    width: 100%;
+  }
 }
 
-.title__color {
-  color: #150B2B;
-}
 
 .banner {
   background-image: url('./assets/images/banner.png');
   height: auto;
-  padding: 250px 0;
-  /* background-position: center; */
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
