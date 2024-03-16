@@ -4,7 +4,7 @@ import { AiOutlineFire } from "react-icons/ai";
 
 const Recipe = () => {
   return (
-    <div className="grid grid-cols-2 gap-5 w-[80%]">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full mx-auto">
 
       <div className="space-y-5 border border-[#28282833] p-6 rounded-2xl">
         <div className="w-full h-auto rounded-2xl mb-5">

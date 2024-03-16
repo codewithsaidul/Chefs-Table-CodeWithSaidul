@@ -5,7 +5,7 @@ import Recipe from "../recipe/Recipe"
 
 const Recipes = () => {
   return (
-    <div>
+    <div className="wfull lg:w-[60%]">
         <Recipe></Recipe>
     </div>
   )

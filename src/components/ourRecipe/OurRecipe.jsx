@@ -14,9 +14,9 @@ const OurRecipe = () => {
       </div>
 
 
-      <div className="flex justify-between">
-        <Recipes className="w-[60%]"></Recipes>
-        <Cooking className="w-[40%]"></Cooking>
+      <div className="flex flex-col lg:flex-row w-full gap-5">
+        <Recipes></Recipes>
+        <Cooking></Cooking>
       </div>
     </div>
   );
