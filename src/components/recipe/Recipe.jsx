@@ -23,7 +23,7 @@ const Recipe = ({ recipe, handleCooking }) => {
         <h3 className="text-lg text-title-color font-semibold">
           {recipe_name}
         </h3>
-        <p className="text-base text-[#878787] font-normal">
+        <p className="text-sm text-[#878787] font-normal">
           {short_description}
         </p>
       </div>

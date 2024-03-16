@@ -1,8 +1,8 @@
 
 import PropTypes from 'prop-types'
+import CurrentCooker from './CurrentCooker';
 
-const CurrentlyCooking = ({ prepareToCooking }) => {
-  
+const CurrentlyCooking = ({ prepareToCooking, time, calori }) => {
   return (
     <div>
       <div>
@@ -25,22 +25,17 @@ const CurrentlyCooking = ({ prepareToCooking }) => {
 
               {/* Table Body */}
 
-              <tbody>
-                {/* <tr className="text-base text-[#282828B2] font-normal">
-                  <td className="bg-base-200">1</td>
-                  <td className="bg-base-200">Chicken Caesar Salad</td>
-                  <td className="bg-base-200">20 minutes</td>
-                  <td className="bg-base-200">400 calories</td>
-                </tr> */}
-              </tbody>
+              {prepareToCooking.map((prepare, index) => (
+                <CurrentCooker key={index} prepare={prepare}></CurrentCooker>
+              ))}
             </table>
 
             <div className="mt-8 flex gap-3">
               <h4 className="text-base text-[#282828CC] font-normal">
-                Total Time = 45 minutes
+                Total Time = {time} minutes
               </h4>
               <h4 className="text-base text-[#282828CC] font-normal">
-                Total Calories = 1050 calories
+                Total Calories = {calori} calories
               </h4>
             </div>
           </div>
@@ -52,6 +47,8 @@ const CurrentlyCooking = ({ prepareToCooking }) => {
 
 CurrentlyCooking.propTypes = {
   prepareToCooking: PropTypes.array,
+  time: PropTypes.number,
+  calori: PropTypes.number,
 };
 
 export default CurrentlyCooking

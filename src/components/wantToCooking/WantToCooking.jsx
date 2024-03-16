@@ -12,7 +12,9 @@ const WantToCooking = ({ data, prepareCooking }) => {
         <td>{calories} calories</td>
         <td>
           <button
-            onClick={() => prepareCooking(recipe_id, data)}
+            onClick={() =>
+              prepareCooking(recipe_id, data, preparing_time, calories)
+            }
             className="py-1 px-4 bg-primary-color rounded-[50px] text-sm text-title-color font-semibold"
           >
             Preparing

@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 import WantToCooking from './WantToCooking';
 
-const WantCooking = ({ wantToCooking, handlePreparing, prepareCooking }) => {
+const WantCooking = ({ wantToCooking, prepareCooking }) => {
   return (
     <div>
       <div>
@@ -30,7 +30,6 @@ const WantCooking = ({ wantToCooking, handlePreparing, prepareCooking }) => {
                 <WantToCooking
                   key={data.recepe__id}
                   data={data}
-                  handlePreparing={handlePreparing}
                   prepareCooking={prepareCooking}
                 ></WantToCooking>
               ))}
@@ -44,7 +43,6 @@ const WantCooking = ({ wantToCooking, handlePreparing, prepareCooking }) => {
 
 WantCooking.propTypes = {
   wantToCooking: PropTypes.array,
-  handlePreparing: PropTypes.func,
   prepareCooking: PropTypes.func
 };
 

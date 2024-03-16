@@ -28,11 +28,11 @@
       "200 g cherry tomatoes, halved",
       "50 g Parmesan cheese, grated"
     ],
-    "preparing_time": "30",
-    "calories": "280"
+    "preparing_time": 30,
+    "calories": 280
   },
   {
-    "recipe_image": "https://i.ibb.co/Tg36HXt/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg",
+    "recipe_image": "https://i.ibb.co/FXsPQq0/brooke-lark-j-UPOXXRNdc-A-unsplash.jpg",
     "recipe_id": "3",
     "recipe_name": "Quinoa Salad with Avocado",
     "short_description": "A refreshing salad with protein-packed quinoa and creamy avocado.",
@@ -44,8 +44,8 @@
       "2 tbsp olive oil",
       "1 tbsp lemon juice"
     ],
-    "preparing_time": "20",
-    "calories": "250"
+    "preparing_time": 20,
+    "calories": 250
   },
   {
     "recipe_image": "https://i.ibb.co/DGD7NVH/anna-pelzer-IGf-IGP5-ONV0-unsplash-1.jpg",
@@ -60,8 +60,8 @@
       "1 tbsp curry powder",
       "1 tsp ground turmeric"
     ],
-    "preparing_time": "35",
-    "calories": "380"
+    "preparing_time": 35,
+    "calories": 380
   },
   {
     "recipe_image": "https://i.ibb.co/QjhBTvR/Rectangle-20170-1.png",
@@ -76,8 +76,8 @@
       "2 tbsp olive oil",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "15",
-    "calories": "180"
+    "preparing_time": 15,
+    "calories": 180
   },
   {
     "recipe_image": "https://i.ibb.co/3fdr0VG/Rectangle-20170.png",
@@ -92,7 +92,7 @@
       "2 cloves garlic, minced",
       "1 lemon, juiced"
     ],
-    "preparing_time": "40",
-    "calories": "220"
+    "preparing_time": 40,
+    "calories": 220
   }
 ]

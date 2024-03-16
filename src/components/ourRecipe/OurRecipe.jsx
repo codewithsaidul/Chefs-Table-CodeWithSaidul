@@ -1,15 +1,16 @@
 import PropTypes from "prop-types";
-// import { useState } from "react";
 import Cooking from "../cooking/Cooking";
 import Recipes from "../recipies/Recipes";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
+
 
 const OurRecipe = ({
   handleCooking,
   wantToCooking,
   prepareCooking,
   prepareToCooking,
+  time,
+  calori,
 }) => {
   return (
     <div className="mt-24">
@@ -22,17 +23,15 @@ const OurRecipe = ({
       </div>
 
       <div className="flex flex-col lg:flex-row w-full gap-5">
-        
         <Recipes handleCooking={handleCooking}></Recipes>
 
         <Cooking
-          handleCooking={handleCooking}
+          time={time}
+          calori={calori}
           prepareCooking={prepareCooking}
           wantToCooking={wantToCooking}
           prepareToCooking={prepareToCooking}
         ></Cooking>
-
-        <ToastContainer />
       </div>
     </div>
   );
@@ -43,6 +42,8 @@ OurRecipe.propTypes = {
   prepareCooking: PropTypes.func,
   wantToCooking: PropTypes.array,
   prepareToCooking: PropTypes.array,
+  time: PropTypes.number,
+  calori: PropTypes.number
 };
 
 export default OurRecipe;
