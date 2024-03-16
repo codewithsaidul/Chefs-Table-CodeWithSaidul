@@ -1,8 +1,16 @@
+import PropTypes from "prop-types";
+// import { useState } from "react";
 import Cooking from "../cooking/Cooking";
 import Recipes from "../recipies/Recipes";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-
-const OurRecipe = () => {
+const OurRecipe = ({
+  handleCooking,
+  wantToCooking,
+  prepareCooking,
+  prepareToCooking,
+}) => {
   return (
     <div className="mt-24">
       <div className="text-center space-y-3 mb-20">
@@ -13,13 +21,28 @@ const OurRecipe = () => {
         </p>
       </div>
 
-
       <div className="flex flex-col lg:flex-row w-full gap-5">
-        <Recipes></Recipes>
-        <Cooking></Cooking>
+        
+        <Recipes handleCooking={handleCooking}></Recipes>
+
+        <Cooking
+          handleCooking={handleCooking}
+          prepareCooking={prepareCooking}
+          wantToCooking={wantToCooking}
+          prepareToCooking={prepareToCooking}
+        ></Cooking>
+
+        <ToastContainer />
       </div>
     </div>
   );
-}
+};
 
-export default OurRecipe
+OurRecipe.propTypes = {
+  handleCooking: PropTypes.func,
+  prepareCooking: PropTypes.func,
+  wantToCooking: PropTypes.array,
+  prepareToCooking: PropTypes.array,
+};
+
+export default OurRecipe;

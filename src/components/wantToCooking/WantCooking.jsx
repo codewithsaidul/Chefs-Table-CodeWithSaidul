@@ -1,17 +1,18 @@
 
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
+import WantToCooking from './WantToCooking';
 
-const WantCooking = () => {
+const WantCooking = ({ wantToCooking, handlePreparing, prepareCooking }) => {
   return (
     <div>
       <div>
         <h2 className="border-b border-[#28282833] pb-5 text-center text-2xl text-[#282828] font-semibold">
-          Want to cook: 01
+          Want to cook: {wantToCooking.length}
         </h2>
 
         <div>
           <div className="mt-5">
-            <table className="table">
+            <table className="table text-center">
               {/* Table Head */}
               <thead>
                 <tr className="text-base text-[#878787] font-normal">
@@ -25,27 +26,26 @@ const WantCooking = () => {
 
               {/* Table Body */}
 
-              <tbody>
-                <tr className="text-base text-[#282828B2] font-normal">
-                  <td>1</td>
-                  <td>Chicken Caesar Salad</td>
-                  <td>20 minutes</td>
-                  <td>400 calories</td>
-                  <td>
-                    <button className="py-1 px-4 bg-primary-color rounded-[50px] text-sm text-title-color font-semibold">
-                      Preparing
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
+              {wantToCooking.map((data) => (
+                <WantToCooking
+                  key={data.recepe__id}
+                  data={data}
+                  handlePreparing={handlePreparing}
+                  prepareCooking={prepareCooking}
+                ></WantToCooking>
+              ))}
             </table>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-WantCooking.propTypes = {}
+WantCooking.propTypes = {
+  wantToCooking: PropTypes.array,
+  handlePreparing: PropTypes.func,
+  prepareCooking: PropTypes.func
+};
 
 export default WantCooking
